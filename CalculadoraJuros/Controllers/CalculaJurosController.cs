@@ -25,11 +25,8 @@ namespace CalculadoraJuros.Controllers
             {
                 throw new ArgumentNullException("meses");
             }
-
-            double result = JurosCompostos.Calcular(valorInicial.Value, await RecuperarTaxaDeJurosAsync(), meses.Value);
-            result = Math.Truncate(100 * result) / 100;
             
-            return result;
+            return JurosCompostos.Calcular(valorInicial.Value, await RecuperarTaxaDeJurosAsync(), meses.Value);
         }
     }
 }
