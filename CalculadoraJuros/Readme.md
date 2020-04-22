@@ -27,3 +27,5 @@ Para o correto funcionamento desta API é necessário adicionar a variável de a
  Por exemplo:
 
     "TAXAJUROSAPI_BASEURL": "http://192.168.99.100:5000"
+
+> As **portas** definidas são apenas exemplos e estão fixas no comando do docker pois **são as mesmas expostas** no **Dockerfile**
