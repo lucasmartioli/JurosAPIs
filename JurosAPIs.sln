@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJurosAPI", "TaxaJurosAP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros", "CalculadoraJuros\CalculadoraJuros.csproj", "{0C55733B-1EE7-4649-B4CB-19EB23511FC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{026E7495-39F7-4EEC-84DE-6B234F14AC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{0C55733B-1EE7-4649-B4CB-19EB23511FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C55733B-1EE7-4649-B4CB-19EB23511FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C55733B-1EE7-4649-B4CB-19EB23511FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026E7495-39F7-4EEC-84DE-6B234F14AC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026E7495-39F7-4EEC-84DE-6B234F14AC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026E7495-39F7-4EEC-84DE-6B234F14AC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026E7495-39F7-4EEC-84DE-6B234F14AC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
