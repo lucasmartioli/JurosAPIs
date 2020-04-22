@@ -7,6 +7,9 @@ Esta API fornece dois endpoints:
 	 - Retorna o valor final, ou seja, `valorinicial` acrescido dos juros no `tempo`
  - /showmethecode
 
+
+Para mais detalhes dessa API: [Swagger](https://app.swaggerhub.com/apis-docs/lucas.fernando.martioli/CalculadoraJuros/1.0.0)
+
 # Deploy no Docker
 
 Basta fazer o build da imagem na pasta do projeto:
