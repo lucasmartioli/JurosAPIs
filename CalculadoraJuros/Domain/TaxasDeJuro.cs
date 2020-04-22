@@ -6,24 +6,21 @@ namespace CalculadoraJuros.Domain
 {
     public static class TaxasDeJuro
     {
-        static string baseUrl = "https://localhost:5001";
+        static readonly string baseUrl = Environment.GetEnvironmentVariable("TAXAJUROSAPI_BASEURL");
 
         public static async Task<double> RecuperarTaxaAsync()
         {
-
-            using (HttpClient client = new HttpClient())
-
-            using (HttpResponseMessage res = await client.GetAsync(baseUrl + "/taxaJuros"))
-            using (HttpContent content = res.Content)
+            using HttpClient client = new HttpClient();
+            using HttpResponseMessage res = await client.GetAsync($"{baseUrl}/taxaJuros");
+            using HttpContent content = res.Content;
+            string data = await content.ReadAsStringAsync();
+            if (data != null)
             {
-                string data = await content.ReadAsStringAsync();
-                if (data != null)
-                {
-                    return Double.Parse(data);
-                } else
-                {
-                    throw new Exception();
-                }
+                return Double.Parse(data);
+            }
+            else
+            {
+                throw new Exception("A API TaxaJuros não esta respondendo!");
             }
 
         }

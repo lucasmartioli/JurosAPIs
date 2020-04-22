@@ -14,6 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "calculadorajuros",
       "environmentVariables": {
+        "TAXAJUROSAPI_BASEURL": "http://192.168.99.100:5000",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -22,6 +23,7 @@
       "launchBrowser": true,
       "launchUrl": "calculadorajuros",
       "environmentVariables": {
+        "TAXAJUROSAPI_BASEURL": "http://192.168.99.100:5000",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "https://localhost:5003;http://localhost:5002"
