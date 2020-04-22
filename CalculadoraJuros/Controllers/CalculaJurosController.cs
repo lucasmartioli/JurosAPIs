@@ -7,7 +7,7 @@ namespace CalculadoraJuros.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CalculadoraJurosController : ControllerBase
+    public class CalculaJurosController : ControllerBase
     {
         private async Task<double> RecuperarTaxaDeJurosAsync() => await TaxasDeJuro.RecuperarTaxaAsync();
 
